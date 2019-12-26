@@ -2,7 +2,7 @@
 title: macOS系统使用命令行打开VSCode
 date: 2019-01-10 14:51:54
 tags: 操作系统
-categories: 服务端
+categories: 开发工具
 ---
 
 1, 进入官网下载VSCode，安装，打开软件。[官网地址](https://code.visualstudio.com/docs/setup/mac)
