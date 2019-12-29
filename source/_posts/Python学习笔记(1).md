@@ -1,5 +1,5 @@
 ---
-title: Python学习笔记(2)
+title: Python学习笔记(1)
 date: 2016-03-14 08:10:53
 tags: Python
 categories: 服务端
@@ -76,6 +76,16 @@ categories: 服务端
 - itervalues(), iteritems(),在迭代过程中不断给出tuple
 - 列表生成式[]、range()函数可以创建list
 
+### 汉诺塔递归算法
+```
+def move(n, a, b, c):
+    if n == 1:
+        print a, "-->", c
+    else:
+        move(n - 1, a, c, b)
+        print a, '-->', c
+        move(n - 1, b, a, c)
+```
 
 #### 注意：
 - window安装要添加path路径
