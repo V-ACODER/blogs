@@ -73,3 +73,28 @@ def bubbleFunc(arr):
 
 bubbleFunc([4, 79, 23, 5, 48, 12])
 ```
+
+#### 计算程序运行时间
+
+```
+import time, functools
+
+def performance(unit):
+    def log_decorator(f):
+        @functools.wraps(f)
+        def wrapper(*args, **kw):
+            x = time.time()
+            r = f(*args, **kw)
+            y = time.time()
+            print 'call %s() in %f%s' %(f.__name__, (y-x), unit)
+            return r
+        return wrapper
+    return log_decorator
+    
+
+@performance('ms')
+def factorial(n):
+    return reduce(lambda x,y: x*y, range(1, n+1))
+
+print factorial(10)
+```
