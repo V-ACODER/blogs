@@ -1,5 +1,5 @@
 ---
-title: JavaScript排序算法
+title: JavaScript洗牌算法
 date: 2020-01-04 08:34:20
 tags: JavaScript
 categories: 算法
