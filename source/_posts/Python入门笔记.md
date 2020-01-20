@@ -1,5 +1,5 @@
 ---
-title: Python学习笔记(1)
+title: Python入门笔记
 date: 2016-03-14 08:10:53
 tags: Python
 categories: 服务端
